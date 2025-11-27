@@ -1,6 +1,6 @@
 [project]
 name = "bach-sentiment_analysis"
-version = "1.0.0"
+version = "2.0.0"
 description = "RapidAPI: twinword/sentiment-analysis"
 readme = "README.md"
 requires-python = ">=3.10"
