@@ -30,7 +30,7 @@ Visit **[EMCP Platform](https://sit-emcp.kaleido.guru)** now to start your MCP j
 
 ## Introduction
 
-This is an automatically generated MCP server using [FastMCP](https://fastmcp.wiki) for accessing the Sentiment Analysis API.
+This is an MCP server for accessing the Sentiment Analysis API.
 
 - **PyPI Package**: `bach-sentiment_analysis`
 - **Version**: 1.0.0
@@ -107,8 +107,8 @@ export API_KEY="your_api_key_here"
 {
   "mcpServers": {
     "sentiment_analysis": {
-      "command": "python",
-      "args": ["E:\path\to\sentiment_analysis\server.py"],
+      "command": "uvx",
+      "args": ["--from", "bach-sentiment_analysis", "bach_sentiment_analysis"],
       "env": {
         "API_KEY": "your_api_key_here"
       }

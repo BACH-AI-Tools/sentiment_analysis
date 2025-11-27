@@ -30,7 +30,7 @@
 
 ## 簡介
 
-這是一個使用 [FastMCP](https://fastmcp.wiki) 自動生成的 MCP 伺服器，用於存取 Sentiment Analysis API。
+這是一個 MCP 伺服器，用於存取 Sentiment Analysis API。
 
 - **PyPI 套件名**: `bach-sentiment_analysis`
 - **版本**: 1.0.0
@@ -107,8 +107,8 @@ export API_KEY="your_api_key_here"
 {
   "mcpServers": {
     "sentiment_analysis": {
-      "command": "python",
-      "args": ["E:\path\to\sentiment_analysis\server.py"],
+      "command": "uvx",
+      "args": ["--from", "bach-sentiment_analysis", "bach_sentiment_analysis"],
       "env": {
         "API_KEY": "your_api_key_here"
       }
@@ -144,7 +144,6 @@ export API_KEY="your_api_key_here"
 
 ## 技术栈
 
-- **FastMCP**: 快速、Pythonic 的 MCP 服务器框架
 - **传输协议**: stdio
 - **HTTP 客户端**: httpx
 
